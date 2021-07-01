@@ -1,0 +1,219 @@
+:root{
+    --mainheada_fontsize:1.35rem;
+    --mainheada_fontfamily:'Open Sans', sans-serif;
+    --mainheada_color:#242729;
+    --mainheada_fontweight:600;
+    /*----------------------*/
+    --headline_fontsize:1rem;
+    --headline_fontfamily:'Open Sans', sans-serif;
+    --headline_color:#242729;
+    --headline_fontweight:400;
+    /*-------------------------*/
+    --tool_subtitle_fontsize:0.9rem;
+    --tool_subtitle_fontfamily:'Open Sans', sans-serif;
+    --tool_subtitle_color:#242729;
+    --tool_subtitle_fontweight:400;
+    /*---------------*/
+    --tool_info_fontsize:0.75rem;
+    --tool_info_fontfamily:'Open Sans', sans-serif;
+    --tool_info_color:#454b4e;
+    --tool_info_fontweight:400;
+    
+ }
+.toolsheader {
+    position: relative;
+    margin: 1.25rem auto 0 auto;
+    max-width: 1590px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+    flex-wrap: nowrap;
+    justify-items: flex-start;
+    align-items: flex-start;
+}
+
+.toolsheader h1 {
+    margin: 0 0 0 1.257rem;
+    max-width: 305px;min-width: 305px;
+    word-wrap: break-word;
+    text-align: left;
+    width:87%;
+    padding: 0;
+    font-size:var(--mainheada_fontsize);
+    font-family: var(--mainheada_fontfamily);
+    color:var(--mainheada_color);
+    font-weight: var(--mainheada_fontweight);
+    letter-spacing: 0.0325em;
+}
+.subheaders{
+    position: relative;
+    margin:4px 0 ;
+    max-width: 1590px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+    flex-wrap: nowrap;
+    justify-items: flex-start;
+    align-items: flex-start;
+}
+.subheaders h2 { margin: 0 0;line-height: 1.54;
+    text-align:left;font-size:var(--headline_fontsize);
+    font-family: var(--headline_fontfamily);
+    color:var(--headline_color);
+    font-weight: var(--headline_fontweight);}
+.WebDevTools {
+ 
+
+    margin: 0.75rem auto;
+    padding: 0;
+    position: relative;
+    max-width: 1590px;
+    max-height: 100%;
+    min-width: 0;
+   
+    min-height: 0;
+  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,326px);
+    grid-gap: 1.5rem;
+    min-width: 0;
+    align-content: flex-start;
+    justify-items: flex-start;
+   
+}
+
+
+
+.tool {    
+    position: relative;
+    margin: 0 1.257rem;
+    max-width:326px;  min-width: 305px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+    flex-wrap: nowrap;
+    justify-items: flex-start;
+    align-items: flex-start;
+
+    overflow: hidden;  /* NEW */
+     /* NEW; needed for Firefox */
+   height: 100%;
+}
+
+
+.thumbnaildesc {
+    border: 1px solid #dfe1e5;
+    border-radius: 8px;
+    position: relative; flex: 1;
+    margin: 0;  display: flex;
+    flex-direction: column;
+}
+
+.thumbnaildesc img {
+    width: 100px;
+    height: 100px;
+    margin: 0 0.9375rem;
+}
+
+.thumbnaildesc h3 {
+    text-align: left;
+    margin: 0 0.9375rem;
+    padding: 12px 0;font-size:var(--tool_subtitle_fontsize);
+    font-family:var(--tool_subtitle_fontfamily) ;
+    color:var(--tool_subtitle_color);
+    font-weight:var(--tool_subtitle_fontweight) ;  overflow: hidden;  /* NEW */
+    min-width: 0;      /* NEW; needed for Firefox */
+}
+
+.thumbnaildesc p {  overflow: hidden;  /* NEW */
+    min-width: 0;      /* NEW; needed for Firefox */
+    text-align: left;
+   
+    margin: 4px 0.9375rem;
+    max-height: 99%;
+    font-size:var(--tool_info_fontsize);
+    font-family: var(--tool_info_fontfamily);
+    color:var(--tool_info_color);
+    font-weight:var(--tool_info_fontweight) ;line-height: 1.54;
+}
+.thumbnaildesc span {margin:0; padding:0;position: relative;font-size: 0; line-height: 0; display: block;}
+.thumbnaildesc span a {text-decoration: none; font-size: var(--tool_info_fontsize);color:#0099e5;}
+
+.thumbnaildesc span a::after {
+
+    font:  16px StripeIcons;
+    content: "\2192";
+    padding-left: 5px;
+
+}
+@media screen and (min-width:326px) {
+
+
+    .toolsheader {
+        position: relative;
+        margin: 1.25rem auto 0 auto;
+        min-width: 305px;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        
+        flex-wrap: wrap;
+        justify-items: center;
+        align-items: center;
+    }
+    
+.toolsheader h1 {
+    margin: 0 0 0 1.257rem;
+    max-width: 350px;
+    
+    text-align:left;
+    width:100%;
+    padding: 0;
+    font-size:var(--mainheada_fontsize);
+    font-family: var(--mainheada_fontfamily);
+    color:var(--mainheada_color);
+    font-weight: var(--mainheada_fontweight);
+    letter-spacing: 0.0325em;
+}
+.subheaders{
+    position: relative;
+    margin:4px 0 ;
+    max-width: 1590px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+    flex-wrap: nowrap;
+    justify-items: flex-start;
+    align-items: flex-start;
+}
+    
+    
+    
+    
+    
+    
+    
+    .WebDevTools {
+ 
+
+        margin: 0.75rem auto;
+        padding: 0;
+        position: relative;
+        max-width: 1590px;
+        max-height: 100%;
+        min-width: 0;
+       
+        min-height: 0;
+      
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,326px);
+        grid-gap: 1.5rem;
+    
+        align-content: center;
+        justify-items: center;
+       
+    }
+    
+} 

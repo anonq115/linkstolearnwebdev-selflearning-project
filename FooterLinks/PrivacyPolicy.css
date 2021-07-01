@@ -1,0 +1,21 @@
+.PrivacyPolicy_Headers {
+    position: relative;
+    margin: 1.25rem auto 1.2rem auto;
+    padding: .6rem 0 0 0;
+    max-width: 1590px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+    flex-wrap: nowrap;
+    justify-items: center;
+    align-items: center;
+
+
+}
+.PrivacyPolicy_Headers div { margin: 0 0 0 1.257rem;
+    padding: 0;
+    text-align: center;
+    
+
+}
+.PrivacyPolicy_Headers p {width:555px; }

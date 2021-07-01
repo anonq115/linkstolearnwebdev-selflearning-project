@@ -1,0 +1,1073 @@
+.headers {
+    margin: 0 auto 0;
+    position: relative;
+    max-width: 1590px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+}
+
+.headers h1 {
+
+    font-size: 2.35rem;
+    font-family:  'Open Sans', sans-serif;
+    font-weight: 700;
+    color: rgb(255, 201, 24);
+    padding: 0;
+    margin: 0 0 1.3rem 0;
+    text-align: center;
+}
+
+.headers h2 {
+    color: var(--headers2-color);
+    font-size: var(--headers2-fontsize);
+    text-align: center;
+    padding: 0;
+    margin: var(--headers2-margin);
+    border-bottom: var(--headers2-bb);
+    padding-bottom: .3em;
+    width: 100%;
+    font-family: var(--headers2-fontfamily);
+    font-weight: 400;
+}
+
+.firstcontainer {
+
+     margin: 0 auto 0 auto;
+    max-width: 1590px;
+    max-height: 100%;
+    min-width: 0;
+    /* NEW */
+    min-height: 0;
+    /* NEW */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 365px);
+    grid-gap: 3.55rem;
+    overflow: hidden;
+
+
+}
+
+.books {
+        margin: 0 auto 0 auto;
+    min-width: 0;
+    /* NEW */
+    position: relative;
+
+
+    white-space: normal;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: center;
+    
+
+}
+
+.thumbnail {
+
+    width: 250px;
+    position: relative;
+
+}
+
+.thumbnail img {
+   
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin:0;
+    padding:0;
+    align-self: center;
+
+}
+
+.caption { 
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    text-align: left;
+
+}
+
+.caption h1,
+.caption h2,
+.caption h3,
+.caption h4 {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.caption h2 {
+    font-size: var(--by-fontsize);
+    font-family: var(--author-fontfamily);
+
+    color: var(--by-color);
+    white-space: wrap;
+
+}
+
+.caption h3 {
+
+    color: red;
+}
+
+
+
+.books a {
+    text-decoration: none;
+}
+
+.books h1 {
+    font-size: var(--subtitles-fontsize);
+    color: var(--subtitles-color);
+    font-family: var(--subtitles-fontfamily);
+}
+
+
+.books h2 a {
+    white-space: wrap;
+}
+
+.caption h2 span {
+    color: var(--author-color);
+    font-size: var(--author-fontsize);
+    font-family: var(--author-fontfamily);
+    letter-spacing: var(--author-letterspacing);
+    text-align: center;
+}
+
+.caption h3 span {
+    color: var(--reddit-color);
+    font-size: var(--reco-fontsize);
+    font-family: var(--reco-fontfamily);
+
+}
+
+.caption h3 p{
+    color: var(--beginner-color);
+    font-size: var(--diffi-fontsize);
+    font-family: var(--diffifontfamily);
+    font-weight: var(--difi-fontweight);
+    margin:0;
+    padding: 0;
+}
+
+
+.books h3  {
+    font-size: var(--fontsize-grayarea);
+    color: var(--color-grayarea);
+    font-family: var(--fontfamily-grayarea);
+}
+
+
+.books h4 {
+    font-size: 2.85rem;
+    margin: 0;
+    padding: 0;
+}
+
+.books h4 a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: var(--sourcelink-fontsize);
+    font-family: var(--mainlinks-fontfamily);
+    color: var(--color-links);
+    text-align: center;
+    word-break: keep-all;
+    word-wrap: none;
+}
+.books h4 a:hover {
+    font-size: 0.84rem;
+    margin: 0;
+    padding: 0;
+}
+
+.books h4 a:after {
+
+    content: "";
+
+    position: absolute;
+    width: 0;
+
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: center center;
+    float: right;
+    /* Float left to reverse entry
+   * Float left in hover:after 
+   * to exit in same direction
+   * Float right in both places 
+   * to achieve the converse
+   * Comment out the float 
+   * to expand from the middle.
+  */
+
+    margin-top: 10px;
+    border-top: 3px solid #32a1d8;
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+}
+
+
+
+.books h4 a:hover:after {
+    width: 75%;
+}
+
+.books h4 a:active,
+header a:active:after {
+    border-color: #ccc;
+    color: #32a1d8;
+
+}
+
+.books h4 img {
+    width: 35px;
+    height: 25px;
+    margin-left: 0.15rem;
+
+}
+
+
+
+
+/*------------------------*/
+
+.firstbooks .caption h3 span:nth-child(2) {
+    color: var(--beginner-color);
+    font-size: var(--diffi-fontsize);
+    font-family: var(--diffifontfamily);
+    font-style: var(--diffi-fontstyle);
+
+
+}
+
+
+.secondbooks .caption h3 span:nth-child(2) {
+    color: var(--beginner-color);
+    font-style: var(--diffi-fontstyle);
+}
+
+.thirdbooks .caption h3 span:nth-child(2) {
+    color: var(--intermediate-color);
+    font-style: var(--diffi-fontstyle);
+}
+
+.fourthbooks .caption h3 span:nth-child(2) {
+    color: var(--intermediate-color);
+    font-style: var(--diffi-fontstyle);
+}
+
+.fifthbooks .caption h3 span:nth-child(2) {
+    color: var(--advanced-color);
+    font-style: var(--diffi-fontstyle);
+}
+
+/*-----------------------------------*/
+.receptacle {
+    margin: 0 auto 0 auto;
+    max-width: 1590px;
+    max-height: 100%;
+    min-width: 0;
+    /* NEW */
+    min-height: 0;
+    /* NEW */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 360px);
+    grid-gap: 1.70rem;
+    position: relative;
+
+}
+
+
+.videos {
+    padding: 12px;
+    min-width: 0;
+    /* NEW */
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transition: 0.37s;
+
+    display: flex;
+    flex-direction: column;
+
+
+    text-align: center;
+    overflow: hidden;
+    align-items: flex-start;
+ 
+
+    padding: 1rem;
+}
+
+.videos div:nth-child(1) {
+    width: 100%;
+  
+}
+
+.videos img {
+    position: relative;
+    width: 100%;
+    height: 189px;
+    
+   
+
+
+}
+
+.videos div:nth-child(2) {
+  
+margin: 0 0 122px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding:0 0.35rem;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.videos h1,
+.videos h2,
+.videos h3 {
+
+    margin: 0;
+    padding: 0;
+    line-height: 1.25;
+}
+
+.videos a {
+    text-decoration: none;
+    color: #525252;
+    font-size: 1.5rem;
+}
+
+.videos h1 {
+    margin: 0;margin-bottom: 4px;
+}
+
+.videos h1 a {
+    color: var(--videotitle-color);
+    font-size: var(--videotitle-fontsize);
+    font-family: var(--videotitle-fontfamily);
+  font-weight: 600;
+
+
+}
+
+.videos h2  {margin-bottom: 4px;
+    font-size: var(--videoviews-fontsize);
+    font-family: var(--videoviews-fontfamily);
+    color:var(--videoviews-color);
+    font-weight: 400;
+ }
+ .videos h2 span:nth-child(1){color:var(--videoviews-color);
+padding: 0 ; margin: 0 0.5rem;}
+     
+
+ 
+.videos h3 {
+    margin-bottom: 4px;
+    color: var( --video-channelname-color);
+    font-size: var( --video-channelname-fontsize);
+    font-family: var(--roboto);
+   font-weight: 400;
+
+}
+
+
+
+.videos h3 span {
+    color:var(--youtube-color);
+    font-size: .73rem;
+}
+
+.videos span {
+
+    font-size:var(--diffi-fontsize);
+    font-family:var(--diffifontfamily);
+    
+}
+.video1 span{ color: var(--beginner-color); }
+
+.video2 span {
+    color: var(--beginner-color);
+   
+}
+
+.video3 span {
+    color: var(--beginner-color);
+  
+}
+
+
+.canister {
+    margin: 0 auto 0 auto;
+    max-width: 1590px;
+    max-height: 100%;
+    min-width: 0;
+    /* NEW */
+    min-height: 0;
+    /* NEW */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 360px);
+    grid-gap: 1.70rem;
+    position: relative;
+
+}
+
+
+.trials {
+    padding: 12px;
+    min-width: 0;
+    /* NEW */
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transition: 0.37s;
+
+    display: flex;
+    flex-direction: column;
+
+
+    text-align: center;
+    overflow: hidden;
+    align-items: flex-start;
+ 
+
+    padding: 1rem;
+}
+
+.trials div:nth-child(1) {
+    width: 100%;
+  
+}
+
+.trials img {
+    position: relative;
+    width: 100%;
+    height: 189px;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius:0.5rem;
+    
+
+}
+
+.trials div:nth-child(2) {
+  
+margin: 0 0 122px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding:0 0.35rem;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.trials h1,
+.trials h2,
+.trials h3 {
+
+    margin: 0;
+    padding: 0;
+    line-height: 1.25;
+}
+
+.trials a {
+    text-decoration: none;
+    color: #525252;
+    font-size: 1.5rem;
+}
+
+.trials h1 {
+    margin: 0;margin-bottom: 4px;
+}
+
+.trials h1 a {
+    color: var(--videotitle-color);
+    font-size: var(--videotitle-fontsize);
+    font-family: var(--videotitle-fontfamily);
+  font-weight: 600;
+
+
+}
+
+.trials h2  {margin-bottom: 4px;
+    font-size: var(--videoviews-fontsize);
+    font-family: var(--videoviews-fontfamily);
+    color:var(--videoviews-color);
+    font-weight: 400;
+ }
+ .trials h2 span:nth-child(1){color:var(--videoviews-color);
+padding: 0 ; margin: 0 0.5rem;}
+     
+
+ 
+.trials h3 {
+    margin-bottom: 4px;
+    color: var( --video-channelname-color);
+    font-size: var( --video-channelname-fontsize);
+    font-family: var(--roboto);
+   font-weight: 400;
+
+}
+
+
+
+.trials h3 span {
+    color:var(--youtube-color);
+    font-size: .73rem;
+}
+
+.trials span {
+    color: var(--beginner-color);
+    font-size:var(--diffi-fontsize);
+    font-family:var(--diffifontfamily);
+    
+}
+
+.trial2 span {
+    color: var(--intermediate-color);
+   
+}
+
+.trial3 span {
+    color: var(--advanced-color);
+  
+}
+
+.trial4 span {
+    color: var(--intermediate-color);
+   
+}
+
+.trial5 span {
+    color: var(--advanced-color);
+  
+}
+
+
+
+
+
+
+
+
+
+.youtubechannels {
+    margin: 0 auto 0 auto;
+    max-width: 1590px;
+    max-height: 100%;
+    min-width: 0;
+    /* NEW */
+    min-height: 0;
+    /* NEW */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 285px);
+    grid-gap: 4.55rem;
+
+
+
+
+
+}
+
+/*---------------------*/
+.channels {
+
+    min-width: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transition: 0.37s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    align-content: center;
+
+    justify-content: center;
+
+}
+
+.channels div {
+    margin: 0 0 0 0.55rem;
+
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.channels h1 {
+    margin: 0;
+}
+
+.channels h1 a {
+
+    font-size: var(--channel-fontsize);
+    font-family: var(--channel-fontfamily);
+    font-weight: 600;
+    color: var(--channel-color);
+    text-decoration: none;line-height: 1.6rem;
+}
+
+.channels div h2 {
+    color: var(--channel-subscolor);
+    font-size: var(--channel-subsfontsize);
+    font-family:  var(--channel-subsfontfamily);
+    margin: 0;line-height: 1.8rem;font-weight: 400;
+}
+
+.channels img {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+
+
+
+}
+
+/***************************/
+.fourth {
+    text-align: center;
+    font-size: var(--headers2-fontsize);
+    font-family: var(--headers2-fontfamily);
+}
+.references {
+    margin: 0 auto 0 auto;
+    max-width: 1590px;
+    max-height: 100%;
+    min-width: 0;
+    /* NEW */
+    min-height: 0;
+    /* NEW */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 155px);
+    align-items: center;
+    justify-items: center;
+
+}
+
+.ref {
+
+    min-width: 0;
+    /* NEW */
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transition: 0.37s;
+  
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    padding: 0;
+    text-align: center;
+    /* apperantly ul has a default padding-left of 40px*/
+    overflow: hidden;
+   
+
+}
+
+.references li {
+    width: 100%;
+    list-style-type: none;
+
+    margin: 1rem 2.75rem 0 0;
+    padding:0;
+    font-size: 1.75rem;
+    height: 100%;
+    min-height: 0;
+
+    line-height: 1.25rem;
+}
+
+.references a {
+    font-size: var(--doclinks-fontsize);
+    font-family: var(--doclinks-fontfamily);
+    font-weight: 100;
+
+    color:var(--doclinks-color);
+    text-decoration: none;
+    list-style-type: none;
+   text-align: center;
+position: relative;
+top: 20px;
+}
+
+
+.references a::before {
+    content: attr(data-tip);
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.897);
+    position: absolute;
+    background-color: rgb(26, 26, 27);
+    white-space: nowrap;
+    word-wrap: break-word;
+    height: 24px;
+    padding: 1px;
+    border-radius: 7px;
+    /*left, webkit, and transform*/
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-2px);
+    transform: translateX(-50%) translateY(-2px);
+    /*left, webkit, and transform*/
+    /*transitions*/
+    opacity: 0;
+    -webkit-transition: opacity 0.4s ease-out;
+    -moz-transition: opacity 0.4s ease-out;
+    -o-transition: opacity 0.4s ease-out;
+    transition: opacity 0.4s ease-out;
+    text-shadow: none;
+
+}
+.references a:hover::before {
+    opacity: 3;
+
+
+}
+
+@media screen and (min-width:510px) {.firstcontainer {
+
+    margin: 0 auto 0 auto;
+   max-width: 1590px;
+   max-height: 100%;
+   min-width: 0;
+   /* NEW */
+   min-height: 0;
+   /* NEW */
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: repeat(1, 365px);
+   grid-gap:0.55rem;
+
+
+
+}
+
+
+.receptacle {
+    margin: 0 auto 0 auto;
+    max-width: 1590px;
+    max-height: 100%;
+    min-width: 0;
+    /* NEW */
+    min-height: 0;
+    /* NEW */
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: repeat(2, 360px);
+    grid-gap:0.55rem;
+
+
+    position: relative;
+
+}
+.canister {
+    margin: 0 auto 0 auto;
+    max-width: 1590px;
+    max-height: 100%;
+    min-width: 0;
+    /* NEW */
+    min-height: 0;
+    /* NEW */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 360px);
+    grid-gap: 1.70rem;
+    position: relative;
+
+}
+
+.youtubechannels {
+    margin: 0 auto 0 auto;
+    max-width: 1590px;
+    max-height: 100%;
+    min-width: 0;
+    /* NEW */
+    min-height: 0;
+    /* NEW */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 285px);
+    grid-gap: 4.55rem;
+
+
+
+
+
+}
+
+/*---------------------*/
+
+
+}
+
+
+@media screen and (min-width:1020px) {.firstcontainer {
+
+    margin: 0 auto 0 auto;
+   max-width: 1590px;
+   max-height: 100%;
+   min-width: 0;
+   /* NEW */
+   min-height: 0;
+   /* NEW */
+   display: grid;
+   grid-template-columns: 1fr ;
+   grid-template-rows: repeat(1, 365px);
+   grid-gap:0.55rem;
+
+
+
+}
+
+
+.receptacle {
+    margin: 0 auto 0 auto;
+    max-width: 1590px;
+    max-height: 100%;
+    min-width: 0;
+    /* NEW */
+    min-height: 0;
+    /* NEW */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(1, 360px);
+    grid-gap:0.55rem;
+
+
+    position: relative;
+
+}
+.canister {
+    margin: 0 auto 0 auto;
+    max-width: 1590px;
+    max-height: 100%;
+    min-width: 0;
+    /* NEW */
+    min-height: 0;
+    /* NEW */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(1, 360px);
+    grid-gap: 1.70rem;
+    position: relative;
+
+}
+
+.youtubechannels {
+    margin: 0 auto 0 auto;
+    max-width: 1590px;
+    max-height: 100%;
+    min-width: 0;
+    /* NEW */
+    min-height: 0;
+    /* NEW */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 285px);
+    grid-gap: 2.65rem;
+
+
+
+
+
+}.references {
+    margin: 0 auto 0 auto;
+    max-width: 1590px;
+    max-height: 100%;
+    min-width: 0;
+    /* NEW */
+    min-height: 0;
+    /* NEW */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 105px);
+    align-items: center;
+    justify-items: center;
+
+}
+
+.ref {
+
+    min-width: 0;
+    /* NEW */
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transition: 0.37s;
+  
+    display: flex;
+    flex-direction: column;
+    margin: 15rem 0;
+    padding: 0;
+    /* apperantly ul has a default padding-left of 40px*/
+    overflow: hidden;
+   
+
+}
+
+.references li {
+    width: 100%;
+    list-style-type: none;
+
+    margin: 0 2.75rem 0 0;
+    padding:0;
+    font-size: 1.75rem;
+    height: 100%;
+    min-height: 0;
+
+    line-height: 1.25rem;
+}
+
+
+
+}
+
+@media screen and (min-width:1380px) {.firstcontainer {
+
+    margin: 0 auto 0 auto;
+   max-width: 1590px;
+   max-height: 100%;
+   min-width: 0;
+   /* NEW */
+   min-height: 0;
+   /* NEW */
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: repeat(1, 365px);
+   grid-gap:0.55rem;
+
+
+
+}
+
+
+.receptacle {
+    margin: 0 auto 0 auto;
+    max-width: 1590px;
+    max-height: 100%;
+    min-width: 0;
+    /* NEW */
+    min-height: 0;
+    /* NEW */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(1, 360px);
+    grid-gap:0.55rem;
+    
+
+    position: relative;
+
+}
+.canister {
+    margin: 0 auto 0 auto;
+    max-width: 1590px;
+    max-height: 100%;
+    min-width: 0;
+    /* NEW */
+    min-height: 0;
+    /* NEW */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(1, 360px);
+    grid-gap: 1.70rem;
+    position: relative;
+
+}
+
+.youtubechannels {
+    margin: 0 auto 0 auto;
+    max-width: 1590px;
+    max-height: 100%;
+    min-width: 0;
+    /* NEW */
+    min-height: 0;
+    /* NEW */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(1, 265px);
+    grid-gap: 2.65rem;
+
+
+
+
+
+}
+.references {
+    margin: 0 auto 0 auto;
+    max-width: 1590px;
+    max-height: 100%;
+    min-width: 0;
+    /* NEW */
+    min-height: 0;
+    /* NEW */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 200px);
+    align-items: center;
+    justify-items: center;
+
+}
+
+.ref {
+
+    min-width: 0;
+    /* NEW */
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transition: 0.37s;
+  
+    display: flex;
+    flex-direction: column;
+    margin: 15rem 0;
+    padding: 0;
+    /* apperantly ul has a default padding-left of 40px*/
+    overflow: hidden;
+   
+
+}
+
+.references li {
+    width: 100%;
+    list-style-type: none;
+
+    margin: 0 2.75rem 0 0;
+    padding:0;
+    font-size: 1.75rem;
+    height: 100%;
+    min-height: 0;
+
+    line-height: 1.25rem;
+}
+
+
+}
